@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Weather Home Credit</string>
+    <string name="temp">%s °C</string>
+    <string name="temp_high_low">High %1s °C / Low %2s °C</string>
+</resources>

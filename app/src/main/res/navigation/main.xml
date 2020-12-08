@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/weatherListFragment">
+
+    <fragment
+        android:id="@+id/weatherListFragment"
+        android:name="ph.homecredit.recruitment.ui.list.WeatherListFragment"
+        tools:layout="@layout/fragment_weather_list">
+
+        <action
+            android:id="@+id/action_weatherList_to_weatherDetails"
+            app:destination="@id/weatherDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/weatherDetailsFragment"
+        android:name="ph.homecredit.recruitment.ui.details.WeatherDetailFragment"
+        tools:layout="@layout/fragment_weather_details">
+
+        <argument
+            android:name="cityId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+
+    </fragment>
+
+</navigation>
